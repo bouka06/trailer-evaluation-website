@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation</title>
+    <script src="controles.js"></script>
+    <link rel="stylesheet" href="mesStyles.css">
+</head>
+
+<body onload="generateCaptcha()">
+    <form action="evaluation.php" method="post" onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Member</legend>
+            <label for="email">Email:</label><input type="text" required id="email" name="email">
+            <label for="password" id="lblPassword">Password</label><input type="password" required id="password" name="mdp"
+                onchange="validatePasswordField()">
+        </fieldset>
+
+        <fieldset>
+            <legend>Movie</legend>
+            <label for="movie" id="lblMovie">Movie:</label>
+            <select name="film" id="movie" onchange="validateMovieField()">
+                <option value="">Choose a movie</option>
+                <option value="1">No Other Land</option>
+                <option value="2">Frères du desert</option>
+                <option value="3">Sahbek Rajel</option>
+            </select><br>
+
+            <label>Rating:</label>
+            <label>Screenplay</label><input type="number" name="sc" min="0" max="5" step="1" required>
+            <label>Image</label><input type="number" name="im" min="0" max="5" step="1" required>
+            <label for="so">Sound</label><input type="number" name="so" min="0" max="5" step="1" required>
+
+            <br>
+            <input type="checkbox" name="check" checked>
+            <label>Does the movie convey a message or an interesting reflection?</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Captcha</legend>
+            <label id="lblCaptcha">Number of alphabetic letters in this string:</label>
+            <span id="captchaText"></span>
+            <input type="text" id="captchaAnswer" onchange="validateCaptchaField()"><br>
+
+            <button type="submit">Evaluate</button>
+            <button type="reset">Cancel</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
