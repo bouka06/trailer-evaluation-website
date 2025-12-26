@@ -11,3 +11,20 @@ I built it using the technologies I learned during secondary education:
 From the main page (`index1.html`), you can view trailers for **three movies**.  
 To watch a trailer, simply click on the movie poster image. The selected trailer plays in the video player.
 (https://github.com/bouka06/trailer-evaluation-website/blob/1fb7a776ddd949b68332afbdd9b6a1700964d2b9/Screen%20Recording%202025-12-26%20165421.mp4)
+### Evaluation page
+The evaluation page allows a user to enter their details and rate a selected film.
+
+- The user must log in using **email** and **password**. These details are checked against the **MySQL database**.  
+  ✅ If the account exists, the user can continue.  
+  ❌ If the details are not found in the database, the evaluation **fails** and is not saved.
+
+- A **randomly generated string** is used as a simple captcha to verify the submission is not from a robot.
+- The form includes validation: if any required information is wrong or missing, the related label turns **red**.
+- When everything is valid, the evaluation is saved to the database:
+  - If the same user has **already evaluated the same film**, the existing evaluation is **updated**.
+  - Otherwise, a **new evaluation** is inserted.
+(https://github.com/bouka06/trailer-evaluation-website/blob/52793293ee873cb06add8f051b0e64f6a24ede7d/Screenshot%202025-12-26%20174303.png)
+(https://github.com/bouka06/trailer-evaluation-website/blob/0619c4e782a66947455668616196595928c462bd/Screen%20Recording%202025-12-26%20175856.mp4)
+(https://github.com/bouka06/trailer-evaluation-website/blob/c9300831b987f539bb4f1e5a6ed0bf4d4fe61e17/Screenshot%202025-12-26%20175941.png)
+
+
