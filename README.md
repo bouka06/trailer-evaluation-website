@@ -38,6 +38,9 @@ The evaluation page allows a user to enter their details and rate a selected fil
 
 ---
 
+**Results page screenshot:**  
+5) Mean rating per title (results page): https://github.com/bouka06/trailer-evaluation-website/blob/593b338007afef764a52e800c335e049522aab6a/Screenshot%202025-12-27%20114108.png
+
 ## How to run (local on your PC)
 
 ### What you need
@@ -67,5 +70,3 @@ The evaluation page allows a user to enter their details and rate a selected fil
 ## Results page
 The results page displays the **mean (average) rating** for each film title, calculated from the evaluations stored in the database.
 
-**Results page screenshot:**  
-5) Mean rating per title (results page): https://github.com/bouka06/trailer-evaluation-website/blob/593b338007afef764a52e800c335e049522aab6a/Screenshot%202025-12-27%20114108.png
