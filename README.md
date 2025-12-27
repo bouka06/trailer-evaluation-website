@@ -34,7 +34,33 @@ The evaluation page allows a user to enter their details and rate a selected fil
 **Evaluation page media:**  
 2) Evaluation page (error state screenshot): https://github.com/bouka06/trailer-evaluation-website/blob/52793293ee873cb06add8f051b0e64f6a24ede7d/Screenshot%202025-12-26%20174303.png  
 3) Update flow (clip showing an evaluation updated): https://github.com/bouka06/trailer-evaluation-website/blob/0619c4e782a66947455668616196595928c462bd/Screen%20Recording%202025-12-26%20175856.mp4  
-4) Insert flow (screenshot showing a new evaluation added): https://github.com/bouka06/trailer-evaluation-website/blob/c9300831b987f539bb4f1e5a6ed0bf4d4fe61e17/Screenshot%202025-12-26%20175941.png  
+4) Insert flow (screenshot showing a new evaluation added): https://github.com/bouka06/trailer-evaluation-website/blob/c9300831b987f539bb4f1e5a6ed0bf4d4fe61e17/Screenshot%202025-12-26%20175941.png 
+
+---
+
+## How to run (local on your PC)
+
+### What you need
+- XAMPP (or WAMP) to run **PHP + MySQL** on your computer
+
+### Steps
+1) Install **XAMPP**.
+2) Open XAMPP and start:
+   - Apache
+   - MySQL
+3) Copy the project folder into:
+   - xampp/htdocs/
+4) Open this in your browser:
+   - http://localhost/phpmyadmin
+5) Create a new database (example name: `bd_film`)
+6) Import the file `bd_film_.sql` into that database.
+7) Open the website:
+   - http://localhost/trailer-evaluation-website/index1.html
+
+### Important
+- Do NOT open `index1.html` by double clicking it (file://).
+- Use localhost (http://localhost/...) so PHP pages work.
+
 
 ---
 
